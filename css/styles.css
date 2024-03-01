@@ -592,6 +592,7 @@ fieldset {
 .close-button:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 
 .close-icon {
@@ -624,6 +625,7 @@ fieldset {
 }
 .modal-label {
   margin-bottom: 4px;
+  display: block;
 }
 .modal-label:focus-within,
 .modal-label:hover,
