@@ -750,4 +750,5 @@ fieldset {
 .modal-form-subscription-btn:hover,
 .modal-form-subscription-btn:focus {
   background-color: #404bbf;
+  fill: #ffffff;
 }
