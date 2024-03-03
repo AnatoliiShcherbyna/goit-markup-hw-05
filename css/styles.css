@@ -739,10 +739,6 @@ fieldset {
   text-decoration: underline;
   color: #4d5ae5;
 }
-.modal-text {
-  display: inline-block;
-  margin-left: 0;
-}
 
 /* btn */
 .modal-form-subscription-btn {
