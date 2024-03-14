@@ -139,7 +139,7 @@
 
       <!-- section3 -->
       <section class="team-card section">
-        <div class="container">
+        <div class="container team-wrapper">
           <h2 class="content-header">Our Team</h2>
           <ul class="team-list">
             <li class="name-item">
@@ -369,7 +369,7 @@
 
       <!-- section4 -->
       <section class="portfolio-card section">
-        <div class="container">
+        <div class="container portfolio-wrapper">
           <h2 class="content-header">Our Portfolio</h2>
           <ul class="list-portfolio">
             <li class="item-portfolio">
@@ -764,14 +764,17 @@
             <label class="checkbox-label" for="user-privacy">
               <span class="modal-checkbox-icon-wrapper">
                 <svg class="checkbox-icon" width="16" height="16">
-                  <use href="./images/icons/sprite-form.svg#icon-vector"></use>
+                  <use
+                    class="modal-tick"
+                    href="./images/icons/sprite-form.svg#icon-vector-modal"
+                  ></use>
                 </svg>
               </span>
-              <div>
+              <span class="text-checkbox">
                 I accept the terms and conditions of the
 
                 <a href="" class="modal-checkbox-link">Privacy Policy</a>
-              </div>
+              </span>
             </label>
           </div>
           <button class="modal-form-subscription-btn" type="submit">
@@ -780,14 +783,14 @@
         </form>
       </div>
     </div>
-    <div class="modal-menu">
-      <button class="modal-close-btn" type="button">
-        <svg width="8" height="8" class="modal-icon-close">
-          <use href="./images/icons/sprite-form.svg#icon-close-btn"></use>
-        </svg>
-      </button>
-
-      <div class="mobile-nav-container">
+    <!-- ============mobile-menu========= -->
+    <div class="modal-menu is-open">
+      <div class="mobile-menu-container">
+        <button class="modal-close-btn" type="button">
+          <svg width="8" height="8" class="modal-icon-close">
+            <use href="./images/icons/sprite-form.svg#icon-close-btn"></use>
+          </svg>
+        </button>
         <nav class="mobile-nav">
           <ul class="mobile-menu-list">
             <li class="menu-item">
@@ -801,54 +804,57 @@
             </li>
           </ul>
         </nav>
-      </div>
-      <div class="mobile-adress-container">
-        <address class="">
-          <ul class="mobile-menu-adress">
-            <li class="modal-menu-item">
-              <a href="tel:+110001111111" class="mobile-adress-link link-number"
-                >+11 (000) 111-11-11</a
-              >
+
+        <div class="mobile-adress-container">
+          <address class="">
+            <ul class="mobile-menu-adress">
+              <li class="modal-menu-item">
+                <a
+                  href="tel:+110001111111"
+                  class="mobile-adress-link link-number"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="modal-menu-item">
+                <a href="mailto:info@devstudio.com" class="mobile-adress-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div>
+          <ul class="mobile-media-list">
+            <li class="mobile-item-media">
+              <a href="" class="link-media-mobile"
+                ><svg width="24" height="24" class="icon-dscr-mobile">
+                  <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="modal-menu-item">
-              <a href="mailto:info@devstudio.com" class="mobile-adress-link"
-                >info@devstudio.com</a
-              >
+            <li class="mobile-item-media">
+              <a href="" class="link-media-mobile"
+                ><svg width="24" height="24" class="icon-dscr-mobile">
+                  <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-item-media">
+              <a href="" class="link-media-mobile"
+                ><svg width="24" height="24" class="icon-dscr-mobile">
+                  <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-item-media">
+              <a href="" class="link-media-mobile"
+                ><svg width="24" height="24" class="icon-dscr-mobile">
+                  <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
-      <div>
-        <ul class="mobile-media-list">
-          <li class="mobile-item-media">
-            <a href="" class="link-media-mobile"
-              ><svg width="24" height="24" class="icon-dscr-mobile">
-                <use href="./images/icons/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-item-media">
-            <a href="" class="link-media-mobile"
-              ><svg width="24" height="24" class="icon-dscr-mobile">
-                <use href="./images/icons/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-item-media">
-            <a href="" class="link-media-mobile"
-              ><svg width="24" height="24" class="icon-dscr-mobile">
-                <use href="./images/icons/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-item-media">
-            <a href="" class="link-media-mobile"
-              ><svg width="24" height="24" class="icon-dscr-mobile">
-                <use href="./images/icons/sprite.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </div>
   </body>
