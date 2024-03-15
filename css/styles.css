@@ -56,14 +56,13 @@ button {
 .container {
   max-width: 320px;
   padding: 0 16px;
+  margin: 0 auto;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .logo {
@@ -112,16 +111,18 @@ button {
     max-width: 768px;
   }
 
-  .top-header {
+  /* .top-header {
     max-width: 768px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 16px;
-  }
-  /* .header-nav {
+  } */
+
+  .header-nav {
     display: flex;
     justify-content: space-between;
-  } */
+  }
+
   .top-nav {
     display: flex;
     align-items: center;
@@ -215,8 +216,9 @@ button {
 
 /* ===========dekstop ===========*/
 @media only screen and (min-width: 1158px) {
-  .header-nav {
+  .container {
     max-width: 1158px;
+    padding: 0 15px;
   }
 
   .adress-link {
@@ -227,7 +229,7 @@ button {
     padding-top: 24px;
     padding-bottom: 24px;
   }
-
+  /* 
   .top-header {
     max-width: 1158px;
     display: flex;
@@ -235,7 +237,7 @@ button {
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
   .nav-content {
     margin-right: 332px;
@@ -332,10 +334,7 @@ button {
   }
 
   .mobile-adress-container {
-    /* width: 193px;
-    height: 72px;
-    margin-top: 168px; */
-    /* margin-left: 16px; */
+    margin-bottom: 40px;
   }
   .mobile-menu-adress {
     display: flex;
@@ -343,9 +342,6 @@ button {
     gap: 24px;
   }
 
-  .mobile-menu-adress {
-    margin-bottom: 40px;
-  }
   .mobile-adress-link {
     font-weight: 500;
     font-size: 20px;
@@ -394,6 +390,12 @@ button {
     fill: #f4f4fd;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .modal-menu {
+    display: none;
+  }
+}
 /* =======main page=========*/
 
 .main-section {
@@ -411,7 +413,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding: 72px 52px;
+  padding: 72px 0;
 }
 
 @media only screen and (min-resolution: 192dpi) {
@@ -425,6 +427,7 @@ button {
 }
 
 .main-header {
+  max-width: 216px;
   font-family: 'Roboto', sans-serif;
   font-size: 36px;
   // line-height: 40px;
@@ -433,7 +436,7 @@ button {
   text-transform: capitalize;
   text-align: center;
   color: #fff;
-  margin-bottom: 72px;
+  margin: 0 auto 72px auto;
 }
 
 /* button */
@@ -470,7 +473,7 @@ button {
       ),
       url(../images/Dark-bg-tablet.jpg);
     max-width: 768px;
-    padding: 112px 136px;
+    padding: 112px 0;
   }
 
   @media only screen and (min-resolution: 192dpi) {
@@ -483,11 +486,13 @@ button {
     }
   }
   .main-header {
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.071;
     letter-spacing: 0.02em;
     text-transform: none;
     margin-bottom: 36px;
+    margin: 0 auto 36px auto;
   }
 }
 
@@ -498,8 +503,8 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office-desktop.jpg);
-    min-width: 1158px;
-    padding: 188px 315px;
+    max-width: 1440px;
+    padding: 188px 0;
   }
 
   @media only screen and (min-resolution: 192dpi) {
@@ -522,13 +527,8 @@ button {
   display: none;
 }
 
-.container {
-  padding: 0;
-}
 .benefits-section {
-  max-width: 320px;
-  padding: 96px 16px;
-  margin: 0 auto;
+  padding: 96px 0;
 }
 /* .benefits-wrapper {
   display: flex;
@@ -549,7 +549,7 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   color: #2e2f42;
 }
 .text-content {
@@ -559,11 +559,11 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-  .benefits-section {
+  /* .benefits-section {
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
   .list-benefits {
     max-width: 768px;
     display: flex;
@@ -588,14 +588,6 @@ button {
 }
 
 @media only screen and (min-width: 1158px) {
-  .benefits-section {
-    display: flex;
-    max-width: 1158px;
-    padding: 120px 16px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
-  }
   .list-benefits {
     min-width: 1128px;
     display: flex;
@@ -644,6 +636,7 @@ button {
     width: calc((100% - 72px) / 4);
   }
   .text-content {
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 0;
@@ -687,10 +680,7 @@ button {
 /* =========Section3======= */
 
 .team-card {
-  padding: 96px 16px;
-  width: 320px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 96px 0;
   background: #f4f4fd;
 }
 
@@ -720,7 +710,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .team-list {
@@ -775,10 +765,6 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-  .team-card {
-    min-width: 736px;
-  }
-
   .team-list {
     display: flex;
     flex-direction: row;
@@ -790,10 +776,6 @@ button {
 }
 
 @media only screen and (min-width: 1158px) {
-  .team-card {
-    min-width: 1158px;
-  }
-
   .team-wrapper {
     min-width: 1158px;
   }
@@ -808,9 +790,7 @@ button {
 
 /* =========section4 ========= */
 .portfolio-card {
-  max-width: 320px;
-  padding: 96px 16px;
-  margin: 0 auto;
+  padding: 96px 0;
 }
 .overlay {
   position: relative;
@@ -871,10 +851,6 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-  .portfolio-card {
-    max-width: 768px;
-  }
-
   .list-portfolio {
     display: flex;
     flex-direction: row;
@@ -896,9 +872,8 @@ button {
 
 @media only screen and (min-width: 1158px) {
   .portfolio-card {
-    min-width: 1158px;
     margin: auto;
-    padding: 96px 15px 170px 15px;
+    padding: 120px 0;
   }
   .portfolio-wrapper {
     min-width: 1128px;
@@ -925,16 +900,15 @@ button {
 /* ==========footer========== */
 
 .footer-box {
-  max-width: 320px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 96px 16px;
+  padding: 96px 0;
   background: #2e2f42;
 }
 
 .logo-footer {
   display: block;
   text-align: center;
+  margin-bottom: 16px;
+  padding: 0;
 }
 .logo-text-two-footer {
   color: #f4f4fd;
@@ -1000,9 +974,6 @@ button {
   width: 288px;
   margin: 0 16px;
 } */
-.logo-footer {
-  padding: 0 0 016px;
-}
 
 .footer-subscription-text {
   display: flex;
@@ -1056,15 +1027,20 @@ button {
 
 @media only screen and (min-width: 768px) {
   .footer-box {
-    max-width: 768px;
-    padding: 96px 164px 96px 108px;
+    padding: 96px 0;
   }
   .footer-wrapper {
-    max-width: 768px;
+    /* max-width: 768px; */
     display: flex;
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
+    margin: 0 auto;
+    padding-left: 108px;
+  }
+
+  .logo-footer {
+    text-align: left;
   }
   .media-text {
     margin-left: 0;
@@ -1106,14 +1082,14 @@ button {
 
 @media only screen and (min-width: 1158px) {
   .footer-box {
-    min-width: 1158px;
     background-color: #2e2f42;
-    padding: 100px 15px 100px 15px;
+    padding: 100px 0;
   }
   .footer-wrapper {
     max-width: 1128px;
     flex-wrap: nowrap;
     gap: 0;
+    padding: 0;
   }
   /* .subscription-input {
     margin: 0;
